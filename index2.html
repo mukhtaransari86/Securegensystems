@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureGen Systems | Fractional CTO & CISO for Unicorn-Scale Tech in India</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Fractional CTO & CISO in Mumbai delivering Zero Trust, Cloud FinOps, AI Governance. Proven at InMobi, Ola, Rebel Foods with ₹50Cr+ savings and hyper-growth infrastructure.">
+    <meta name="keywords" content="fractional CTO India, fractional CISO Mumbai, Zero Trust consulting, cloud FinOps India, unicorn scaling, enterprise security Mumbai, AI governance India">
+    <meta name="author" content="SecureGen Systems">
+    <meta name="theme-color" content="#10b981">
+    
+    <!-- Open Graph / Social Media Meta -->
+    <meta property="og:title" content="SecureGen Systems | Unicorn-Scale Tech Architecture for India">
+    <meta property="og:description" content="Fractional CTO & CISO delivering battle-tested Zero Trust, Cloud FinOps, and AI Governance frameworks.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://securegensystems.com">
+    <meta property="og:image" content="https://securegensystems.com/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SecureGen Systems | Fractional CTO & CISO Services">
+    <meta name="twitter:description" content="Scale with Unicorn Tech DNA. Proven at InMobi, Ola, Rebel Foods.">
+    <meta name="twitter:image" content="https://securegensystems.com/twitter-card.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- External Dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data for Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "SecureGen Systems",
+      "description": "Fractional CTO and CISO services specializing in Zero Trust, Cloud FinOps, and AI Governance for scaling startups in India.",
+      "url": "https://securegensystems.com",
+      "telephone": "+91-76667-33111",
+      "email": "contact@securegensystems.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400001",
+        "addressCountry": "IN"
+      },
+      "areaServed": ["IN", "Global"],
+      "serviceType": ["Fractional CTO", "Fractional CISO", "Cloud FinOps", "Zero Trust Architecture", "AI Governance"],
+      "founder": {
+        "@type": "Person",
+        "name": "SecureGen Leadership Team",
+        "jobTitle": "Fractional CTO & CISO"
+      },
+      "priceRange": "$$$",
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "sameAs": [
+        "https://www.linkedin.com/company/securegen-systems",
+        "https://twitter.com/securegensystems"
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --color-emerald: #10b981;
+            --color-slate-900: #0f172a;
+            --color-slate-800: #1e293b;
+        }
+        
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #020617; 
+            color: #f8fafc; 
+            overflow-x: hidden; 
+            scroll-behavior: smooth; 
+        }
+        
+        /* Improved Accessibility: Better contrast ratios */
+        .gradient-text { 
+            background: linear-gradient(90deg, #10b981, #3b82f6); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            background-clip: text;
+        }
+        
+        .glass { 
+            background: rgba(15, 23, 42, 0.85); 
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.08); 
+        }
+        
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.03); 
+            border: 1px solid rgba(255, 255, 255, 0.05); 
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .glass-card:hover { 
+            border-color: #10b981; 
+            transform: translateY(-8px); 
+            background: rgba(16, 185, 129, 0.08); 
+            box-shadow: 0 20px 40px rgba(16, 185, 129, 0.15);
+        }
+        
+        /* Scroll Effects */
+        nav.scrolled {
+            padding-top: 0.5rem !important;
+            padding-bottom: 0.5rem !important;
+            background: rgba(15, 23, 42, 0.98) !important;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        nav.scrolled .logo-img { height: 3rem !important; }
+        nav.scrolled .brand-text { font-size: 1.5rem !important; }
+        
+        /* Animated Hamburger */
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background-color: #10b981;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            transform-origin: center;
+        }
+        
+        .hamburger span:nth-child(1) { transform: translateY(-8px); }
+        .hamburger span:nth-child(3) { transform: translateY(8px); }
+        
+        .hamburger.active span:nth-child(1) { transform: translateY(0) rotate(45deg); }
+        .hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+        .hamburger.active span:nth-child(3) { transform: translateY(0) rotate(-45deg); }
+        
+        /* Logo Hover Effects */
+        .logo-grayscale { 
+            filter: grayscale(100%); 
+            opacity: 0.7; 
+            transition: all 0.4s ease; 
+        }
+        
+        .logo-grayscale:hover { 
+            filter: grayscale(0%); 
+            opacity: 1; 
+            transform: scale(1.1); 
+        }
+        
+        /* Loading Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        /* Chatbot */
+        #chatbot-window { 
+            transition: all 0.4s ease; 
+            transform: translateY(20px) scale(0.95); 
+            opacity: 0; 
+            pointer-events: none; 
+        }
+        
+        #chatbot-window.active { 
+            transform: translateY(0) scale(1); 
+            opacity: 1; 
+            pointer-events: auto; 
+        }
+        
+        /* Focus styles for accessibility */
+        *:focus {
+            outline: 2px solid #10b981;
+            outline-offset: 2px;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+        
+        /* Form improvements */
+        input:focus, select:focus, textarea:focus {
+            border-color: #10b981 !important;
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2) !important;
+        }
+    </style>
+</head>
+<body class="antialiased" aria-label="SecureGen Systems website">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-600 text-white px-4 py-2 rounded-lg z-[9999]">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass top-0 left-0 py-4 transition-all duration-400" role="navigation" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3 sm:space-x-4" aria-label="SecureGen Systems homepage">
+                <img src="./Securden1.jpg" alt="SecureGen Systems Logo" class="h-14 sm:h-20 w-auto logo-img transition-all duration-400" style="min-width: 180px;" loading="eager">
+                <span class="text-2xl sm:text-3xl font-extrabold hidden sm:block brand-text transition-all duration-400">
+                    <span class="text-white">SecureGen</span>
+                    <span class="text-emerald-600">Systems</span>
+                </span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-6 lg:space-x-8 text-xs font-bold uppercase tracking-widest">
+                <a href="#about" class="hover:text-emerald-400 transition px-3 py-2 rounded-lg hover:bg-white/5" aria-label="About our authority">Authority</a>
+                <a href="#core" class="hover:text-emerald-400 transition px-3 py-2 rounded-lg hover:bg-white/5" aria-label="Digital Core services">Digital Core</a>
+                <a href="#clients" class="hover:text-emerald-400 transition px-3 py-2 rounded-lg hover:bg-white/5" aria-label="Our clients">Clients</a>
+                <a href="#impact" class="hover:text-emerald-400 transition px-3 py-2 rounded-lg hover:bg-white/5" aria-label="Our impact">Impact</a>
+                <a href="#services" class="hover:text-emerald-400 transition px-3 py-2 rounded-lg hover:bg-white/5" aria-label="Our services">Services</a>
+                <a href="#insights" class="hover:text-emerald-400 transition px-3 py-2 rounded-lg hover:bg-white/5" aria-label="Thought leadership insights">Insights</a>
+                <a href="#contact" class="bg-emerald-600 hover:bg-emerald-500 px-6 py-2.5 rounded-full transition-all shadow-lg hover:shadow-emerald-500/30" aria-label="Book a free audit">Book Audit</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden relative w-10 h-10 focus:outline-none z-50" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                <div class="hamburger flex flex-col justify-center items-center">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="hidden fixed inset-0 bg-slate-900/98 backdrop-blur-lg pt-24 px-8 space-y-6 text-center" role="menu" aria-label="Mobile menu">
+            <a href="#about" class="block text-2xl font-semibold hover:text-emerald-400 transition py-3" role="menuitem">Authority</a>
+            <a href="#core" class="block text-2xl font-semibold hover:text-emerald-400 transition py-3" role="menuitem">Digital Core</a>
+            <a href="#clients" class="block text-2xl font-semibold hover:text-emerald-400 transition py-3" role="menuitem">Clients</a>
+            <a href="#impact" class="block text-2xl font-semibold hover:text-emerald-400 transition py-3" role="menuitem">Impact</a>
+            <a href="#services" class="block text-2xl font-semibold hover:text-emerald-400 transition py-3" role="menuitem">Services</a>
+            <a href="#insights" class="block text-2xl font-semibold hover:text-emerald-400 transition py-3" role="menuitem">Insights</a>
+            <a href="#contact" class="block text-2xl font-bold text-emerald-400 py-4 mt-8 border-t border-white/10" role="menuitem">Book Free Audit →</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <header id="core" class="relative pt-32 pb-20 px-6 sm:pt-36 sm:pb-32" aria-label="Hero section">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="text-center lg:text-left order-2 lg:order-1 animate-fade-in-up">
+                    <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold mb-8 uppercase tracking-[0.2em] animate-pulse" aria-label="Trusted by India's leading unicorns">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        Trusted by India's Leading Unicorns
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-6 leading-tight">
+                        Scale with <br class="hidden sm:block">
+                        <span class="gradient-text">Unicorn Tech DNA.</span>
+                    </h1>
+                    <p class="text-base sm:text-lg lg:text-xl text-slate-300 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        Fractional CTO & CISO delivering battle-tested Zero Trust, Cloud FinOps, and AI Governance frameworks that power hyper-growth with <span class="font-bold text-emerald-400">₹50Cr+ annual savings.</span>
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start">
+                        <a href="#services" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 px-8 rounded-2xl shadow-2xl transition-all transform hover:scale-105 text-center hover:shadow-emerald-500/30" aria-label="Define your digital core strategy">
+                            <i class="fas fa-bolt mr-2"></i> Define Your Digital Core
+                        </a>
+                        <a href="#contact" class="bg-slate-800/80 hover:bg-slate-800 text-white font-bold py-4 px-8 rounded-2xl border border-slate-700 transition-all text-center hover:border-emerald-500/50" aria-label="Schedule an executive review">
+                            <i class="fas fa-calendar-alt mr-2"></i> Schedule Executive Review
+                        </a>
+                    </div>
+                    
+                    <!-- Trust Indicators -->
+                    <div class="mt-12 pt-8 border-t border-white/10">
+                        <div class="flex flex-wrap justify-center lg:justify-start gap-6 text-sm text-slate-400">
+                            <div class="flex items-center">
+                                <i class="fas fa-shield-alt text-emerald-500 mr-2"></i> ISO 27001 Certified
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-clock text-emerald-500 mr-2"></i> 24/7 Support
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-emerald-500 mr-2"></i> 99.99% Uptime SLA
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Core Visualization -->
+                <div class="flex flex-col items-center order-1 lg:order-2 animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-6 text-center">The SecureGen <span class="text-emerald-500">Digital Core</span></h2>
+                    <p class="text-slate-400 mb-10 text-center text-sm sm:text-base max-w-md">Balancing velocity, scale, security, and governance at unicorn speed.</p>
+                    <div class="glass p-8 sm:p-10 rounded-3xl border border-white/10 shadow-2xl w-full max-w-lg hover:border-emerald-500/30 transition-all duration-500">
+                        <svg class="w-full h-auto" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Digital Core visualization diagram">
+                            <!-- SVG content remains the same but optimized -->
+                            <rect x="0" y="0" width="400" height="300" fill="#0f172a"/>
+                            <defs>
+                                <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                                    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#334155" stroke-width="0.5"/>
+                                </pattern>
+                                <radialGradient id="coreGradient">
+                                    <stop offset="0%" stop-color="#059669"/>
+                                    <stop offset="100%" stop-color="#065f46"/>
+                                </radialGradient>
+                            </defs>
+                            <rect width="400" height="300" fill="url(#grid)" opacity="0.3"/>
+                            <circle cx="200" cy="150" r="50" fill="url(#coreGradient)" stroke="#047857" stroke-width="3"/>
+                            <text x="200" y="158" text-anchor="middle" font-size="16" font-weight="bold" fill="#F3F4F6">Digital Core</text>
+                            <!-- Animated lines -->
+                            <line x1="200" y1="150" x2="350" y2="50" stroke="#10B981" stroke-width="2" stroke-dasharray="8 4" opacity="0.8">
+                                <animate attributeName="stroke-dashoffset" from="20" to="0" dur="2s" repeatCount="indefinite"/>
+                            </line>
+                            <text x="355" y="45" font-size="14" fill="#10B981">Velocity</text>
+                            
+                            <line x1="200" y1="150" x2="50" y2="250" stroke="#10B981" stroke-width="2" stroke-dasharray="8 4" opacity="0.8">
+                                <animate attributeName="stroke-dashoffset" from="20" to="0" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+                            </line>
+                            <text x="45" y="255" font-size="14" fill="#10B981">Scale</text>
+                            
+                            <!-- Security and Governance -->
+                            <path d="M250 150 L270 120 M270 180 L250 150" stroke="#FBBF24" stroke-width="2" opacity="0.9">
+                                <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                            <path d="M150 150 L130 120 M130 180 L150 150" stroke="#FBBF24" stroke-width="2" opacity="0.9">
+                                <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" begin="1s"/>
+                            </path>
+                            <text x="300" y="150" font-size="14" fill="#FBBF24">Zero Trust</text>
+                            <text x="100" y="150" text-anchor="end" font-size="14" fill="#FBBF24">AI Governance</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Client Logo Cloud Section -->
+        <<!-- Client Logo Cloud Section - With Ridaex TV -->
+<section id="clients" class="py-16 px-6 bg-slate-900/20" aria-label="Our clients">
+    <div class="max-w-7xl mx-auto text-center">
+        <p class="text-slate-400 uppercase tracking-widest text-xs mb-2">Powered Growth For</p>
+        <h3 class="text-2xl font-bold mb-10 text-white">India's Fastest Growing Companies</h3>
+        
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8 items-center">
+            <!-- InMobi -->
+            <div class="glass-card p-6 rounded-2xl group">
+                <div class="w-40 h-16 mx-auto flex items-center justify-center">
+                    <img src="./client-logos/inmobi-logo.svg" alt="InMobi" class="h-10 w-auto object-contain">
+                </div>
+                <p class="text-xs text-slate-500 mt-2 group-hover:text-emerald-400 transition">Ad-Tech Giant</p>
+            </div>
+
+            <!-- Ola -->
+            <div class="glass-card p-6 rounded-2xl group">
+                <div class="w-40 h-16 mx-auto flex items-center justify-center">
+                    <img src="./client-logos/ola-white-logo.svg" alt="Ola" class="h-10 w-auto object-contain">
+                </div>
+                <p class="text-xs text-slate-500 mt-2 group-hover:text-emerald-400 transition">Mobility Leader</p>
+            </div>
+
+            <!-- Rebel Foods -->
+            <div class="glass-card p-6 rounded-2xl group">
+                <div class="w-40 h-16 mx-auto flex items-center justify-center">
+                    <img src="./client-logos/rebel_logo.svg" alt="Rebel Foods" class="h-10 w-auto object-contain">
+                </div>
+                <p class="text-xs text-slate-500 mt-2 group-hover:text-emerald-400 transition">Cloud Kitchen Pioneer</p>
+            </div>
+
+            <!-- Paytm -->
+            <div class="glass-card p-6 rounded-2xl group">
+                <div class="w-40 h-16 mx-auto flex items-center justify-center">
+                    <img src="./client-logos/Paytm.svg" alt="Paytm" class="h-10 w-auto object-contain">
+                </div>
+                <p class="text-xs text-slate-500 mt-2 group-hover:text-emerald-400 transition">Fintech Leader</p>
+            </div>
+            
+            <!-- Ridaex TV -->
+            <div class="glass-card p-6 rounded-2xl group">
+                <div class="w-40 h-16 mx-auto flex items-center justify-center">
+                    <img src="./client-logos/ridaex.webp" alt="Ridaex TV" class="h-10 w-auto object-contain">
+                </div>
+                <p class="text-xs text-slate-500 mt-2 group-hover:text-emerald-400 transition">Media & Streaming</p>
+            </div>
+        </div>
+        
+        <p class="text-slate-500 text-sm mt-12">And 50+ other fast-growing enterprises across India & Southeast Asia</p>
+    </div>
+</section>
+
+        <!-- Authority Section -->
+        <section id="about" class="py-20 px-6 bg-slate-900/30" aria-label="About our authority">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="animate-fade-in-up">
+                    <span class="text-emerald-500 font-bold uppercase tracking-widest text-xs mb-4 block">Executive Leadership</span>
+                    <h2 class="text-3xl md:text-5xl font-extrabold mb-6 leading-tight">
+                        Fractional CTO & CISO <br>
+                        <span class="text-emerald-500">Born in Hyper-Scale India</span>
+                    </h2>
+                    <p class="text-slate-300 text-lg mb-8 leading-relaxed">
+                        SecureGen Systems is led by the architectural expertise that powered India's most iconic growth stories — from 5,000+ server ad-tech platforms to IoT across 450+ cloud kitchens in 120+ cities.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-10">
+                        <div class="p-5 glass-card rounded-2xl hover:border-emerald-500">
+                            <div class="text-3xl font-bold text-white mb-1">18+</div>
+                            <div class="text-xs text-slate-500 uppercase font-bold tracking-widest">Years Executive Leadership</div>
+                        </div>
+                        <div class="p-5 glass-card rounded-2xl hover:border-emerald-500">
+                            <div class="text-3xl font-bold text-emerald-500 mb-1">3</div>
+                            <div class="text-xs text-slate-500 uppercase font-bold tracking-widest">Indian Unicorns Scaled</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="inline-flex items-center text-emerald-400 font-semibold hover:text-emerald-300 transition group" aria-label="Meet our leadership team">
+                        Meet Our Leadership Team
+                        <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+                
+                <div class="glass p-8 rounded-3xl border-emerald-500/20 animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <h3 class="text-emerald-400 font-bold mb-6 uppercase tracking-widest text-xs flex items-center">
+                        <i class="fas fa-star mr-2"></i> Core Expertise
+                    </h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4 group">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center shrink-0 group-hover:bg-emerald-500/20 transition">
+                                <i class="fas fa-server text-emerald-500 text-lg"></i>
+                            </div>
+                            <div>
+                                <strong class="text-lg block mb-1 group-hover:text-emerald-400 transition">Hyper-Scale Operations</strong>
+                                <span class="block text-sm text-slate-400">Billions of impressions, 99.99% uptime, multi-region deployment.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4 group">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center shrink-0 group-hover:bg-emerald-500/20 transition">
+                                <i class="fas fa-shield-alt text-emerald-500 text-lg"></i>
+                            </div>
+                            <div>
+                                <strong class="text-lg block mb-1 group-hover:text-emerald-400 transition">Zero Trust Governance</strong>
+                                <span class="block text-sm text-slate-400">40% risk reduction, ISO 27001 certified, SOC2 compliant.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4 group">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center shrink-0 group-hover:bg-emerald-500/20 transition">
+                                <i class="fas fa-coins text-emerald-500 text-lg"></i>
+                            </div>
+                            <div>
+                                <strong class="text-lg block mb-1 group-hover:text-emerald-400 transition">Strategic FinOps</strong>
+                                <span class="block text-sm text-slate-400">₹50Cr+ saved via automation, governance, and optimization.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4 group">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center shrink-0 group-hover:bg-emerald-500/20 transition">
+                                <i class="fas fa-robot text-emerald-500 text-lg"></i>
+                            </div>
+                            <div>
+                                <strong class="text-lg block mb-1 group-hover:text-emerald-400 transition">AI & LLMOps</strong>
+                                <span class="block text-sm text-slate-400">Secure GPT-4 deployments, model governance, MLOps at scale.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section id="impact" class="py-24 px-6" aria-label="Our impact">
+            <div class="max-w-7xl mx-auto text-center">
+                <h2 class="text-4xl font-extrabold mb-4">Proven Unicorn Impact</h2>
+                <p class="text-slate-400 mb-16 max-w-2xl mx-auto">Measurable results delivered to India's fastest-growing companies</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="glass-card p-8 rounded-3xl group">
+                        <div class="text-5xl font-extrabold text-emerald-500 mb-4 group-hover:scale-110 transition">₹50Cr+</div>
+                        <p class="text-sm uppercase tracking-widest text-slate-500 mb-2">Annual Savings Delivered</p>
+                        <p class="text-xs text-slate-400">Cloud optimization & automation</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-3xl group">
+                        <div class="text-5xl font-extrabold text-blue-500 mb-4 group-hover:scale-110 transition">120+</div>
+                        <p class="text-sm uppercase tracking-widest text-slate-500 mb-2">Cities Scaled Globally</p>
+                        <p class="text-xs text-slate-400">Infrastructure deployment</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-3xl group">
+                        <div class="text-5xl font-extrabold text-purple-500 mb-4 group-hover:scale-110 transition">99.99%</div>
+                        <p class="text-sm uppercase tracking-widest text-slate-500 mb-2">Platform Uptime</p>
+                        <p class="text-xs text-slate-400">Enterprise SLA compliance</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-3xl group">
+                        <div class="text-5xl font-extrabold text-amber-500 mb-4 group-hover:scale-110 transition">40%</div>
+                        <p class="text-sm uppercase tracking-widest text-slate-500 mb-2">Risk Reduction</p>
+                        <p class="text-xs text-slate-400">Zero Trust implementation</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial -->
+                <div class="mt-20 max-w-3xl mx-auto">
+                    <div class="glass p-8 rounded-3xl relative">
+                        <i class="fas fa-quote-left text-4xl text-emerald-500/30 absolute top-6 left-6"></i>
+                        <p class="text-lg italic text-slate-300 mb-6 relative z-10">
+                            "SecureGen transformed our cloud infrastructure, reducing costs by 35% while improving security posture. Their fractional CTO model gave us unicorn-scale expertise without the unicorn-scale budget."
+                        </p>
+                        <div class="flex items-center justify-center">
+                            <img src="./client-logos/LTschools.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                            <div class="text-left">
+                                <p class="font-bold">Prince Jain</p>
+                                <p class="text-sm text-slate-500">Co-Founder of LT Schools and CareNet Solutions scaled to 10M+ users</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-24 px-6 bg-slate-900/30" aria-label="Our services">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <span class="text-emerald-500 font-bold uppercase tracking-widest text-xs mb-4 block">Engagement Models</span>
+                    <h2 class="text-4xl font-extrabold mb-4">Executive Technology Services</h2>
+                    <p class="text-slate-400 max-w-2xl mx-auto">Flexible leadership solutions for scaling companies</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Fractional CTO -->
+                    <div class="glass-card p-8 rounded-2xl group flex flex-col h-full">
+                        <div class="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-6 group-hover:bg-emerald-500/20 transition">
+                            <i class="fas fa-user-tie text-2xl text-emerald-500"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-white group-hover:text-emerald-400 transition">Fractional CTO</h3>
+                        <p class="text-sm text-slate-400 mb-6 leading-relaxed flex-grow">
+                            Executive leadership to guide technology roadmaps, infrastructure scaling, and team building for Series B+ startups.
+                        </p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-emerald-500/10 text-emerald-400 text-xs font-bold px-3 py-1 rounded-full mb-4">Part-time Executive</span>
+                            <a href="#contact" class="text-emerald-400 font-semibold text-sm hover:text-emerald-300 transition inline-flex items-center group/link">
+                                Schedule Discovery Call
+                                <i class="fas fa-arrow-right ml-2 text-xs group-hover/link:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- FinOps Audit -->
+                    <div class="glass-card p-8 rounded-2xl group flex flex-col h-full">
+                        <div class="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-6 group-hover:bg-emerald-500/20 transition">
+                            <i class="fas fa-chart-line text-2xl text-emerald-500"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-white group-hover:text-emerald-400 transition">FinOps Audit</h3>
+                        <p class="text-sm text-slate-400 mb-6 leading-relaxed flex-grow">
+                            30-day deep dive identifying and automating ₹5Cr+ in annual cloud waste. Full report with prioritized action plan.
+                        </p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-blue-500/10 text-blue-400 text-xs font-bold px-3 py-1 rounded-full mb-4">30-Day Sprint</span>
+                            <a href="#contact" class="text-emerald-400 font-semibold text-sm hover:text-emerald-300 transition inline-flex items-center group/link">
+                                Get Free Assessment
+                                <i class="fas fa-arrow-right ml-2 text-xs group-hover/link:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- CISO-as-a-Service -->
+                    <div class="glass-card p-8 rounded-2xl group flex flex-col h-full">
+                        <div class="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-6 group-hover:bg-emerald-500/20 transition">
+                            <i class="fas fa-shield-alt text-2xl text-emerald-500"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-white group-hover:text-emerald-400 transition">CISO-as-a-Service</h3>
+                        <p class="text-sm text-slate-400 mb-6 leading-relaxed flex-grow">
+                            Complete security leadership: Zero Trust architecture, compliance (ISO 27001, SOC2), incident response, and team training.
+                        </p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-purple-500/10 text-purple-400 text-xs font-bold px-3 py-1 rounded-full mb-4">Ongoing Engagement</span>
+                            <a href="#contact" class="text-emerald-400 font-semibold text-sm hover:text-emerald-300 transition inline-flex items-center group/link">
+                                Request Security Review
+                                <i class="fas fa-arrow-right ml-2 text-xs group-hover/link:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- LLMOps & AI Governance -->
+                    <div class="glass-card p-8 rounded-2xl group flex flex-col h-full">
+                        <div class="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-6 group-hover:bg-emerald-500/20 transition">
+                            <i class="fas fa-microchip text-2xl text-emerald-500"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-white group-hover:text-emerald-400 transition">AI Governance</h3>
+                        <p class="text-sm text-slate-400 mb-6 leading-relaxed flex-grow">
+                            End-to-end LLMOps: Secure GPT-4 deployments, open-source model governance, MLOps pipelines, and compliance frameworks.
+                        </p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-amber-500/10 text-amber-400 text-xs font-bold px-3 py-1 rounded-full mb-4">Project-Based</span>
+                            <a href="#contact" class="text-emerald-400 font-semibold text-sm hover:text-emerald-300 transition inline-flex items-center group/link">
+                                Discuss AI Strategy
+                                <i class="fas fa-arrow-right ml-2 text-xs group-hover/link:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Insights / Thought Leadership -->
+        <section id="insights" class="py-24 px-6 bg-slate-900/20" aria-label="Thought leadership">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold mb-4">Latest Thought Leadership</h2>
+                    <p class="text-slate-400 max-w-2xl mx-auto">Insights from scaling India's fastest-growing tech companies</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Article 1 -->
+                    <a href="#" class="glass-card p-8 rounded-2xl hover:border-emerald-500 transition-all group block" aria-label="Read article about Zero Trust Architecture">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="relative">
+                                <img src="https://via.placeholder.com/48/10b981/ffffff?text=SG" alt="Author" class="w-12 h-12 rounded-full" loading="lazy">
+                                <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-emerald-500 rounded-full border-2 border-slate-900"></div>
+                            </div>
+                            <div>
+                                <p class="font-semibold">SecureGen Team</p>
+                                <p class="text-xs text-slate-500">Dec 2025 • 6 min read</p>
+                            </div>
+                        </div>
+                        <span class="inline-block bg-emerald-500/10 text-emerald-400 text-xs font-bold px-3 py-1 rounded-full mb-4">Security</span>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-emerald-400 transition">The Future of Zero Trust Architecture in India</h3>
+                        <p class="text-sm text-slate-400 mb-6">How Indian enterprises can achieve 40% risk reduction without sacrificing development velocity.</p>
+                        <div class="flex items-center text-emerald-400 font-semibold text-sm">
+                            Read Full Analysis
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                        </div>
+                    </a>
+                    
+                    <!-- Article 2 -->
+                    <a href="#" class="glass-card p-8 rounded-2xl hover:border-emerald-500 transition-all group block" aria-label="Read article about Cloud FinOps">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="relative">
+                                <img src="https://via.placeholder.com/48/3b82f6/ffffff?text=SG" alt="Author" class="w-12 h-12 rounded-full" loading="lazy">
+                                <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-blue-500 rounded-full border-2 border-slate-900"></div>
+                            </div>
+                            <div>
+                                <p class="font-semibold">SecureGen Team</p>
+                                <p class="text-xs text-slate-500">Nov 2025 • 8 min read</p>
+                            </div>
+                        </div>
+                        <span class="inline-block bg-blue-500/10 text-blue-400 text-xs font-bold px-3 py-1 rounded-full mb-4">FinOps</span>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-emerald-400 transition">Scaling Cloud FinOps at Hyper-Growth</h3>
+                        <p class="text-sm text-slate-400 mb-6">Real strategies that saved ₹50Cr+ annually across unicorn infrastructures without performance trade-offs.</p>
+                        <div class="flex items-center text-emerald-400 font-semibold text-sm">
+                            Read Full Analysis
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                        </div>
+                    </a>
+                    
+                    <!-- Article 3 -->
+                    <a href="#" class="glass-card p-8 rounded-2xl hover:border-emerald-500 transition-all group block" aria-label="Read article about AI Governance">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="relative">
+                                <img src="https://via.placeholder.com/48/8b5cf6/ffffff?text=SG" alt="Author" class="w-12 h-12 rounded-full" loading="lazy">
+                                <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-purple-500 rounded-full border-2 border-slate-900"></div>
+                            </div>
+                            <div>
+                                <p class="font-semibold">SecureGen Team</p>
+                                <p class="text-xs text-slate-500">Oct 2025 • 5 min read</p>
+                            </div>
+                        </div>
+                        <span class="inline-block bg-purple-500/10 text-purple-400 text-xs font-bold px-3 py-1 rounded-full mb-4">AI/ML</span>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-emerald-400 transition">LLMOps: Secure AI Deployment at Scale</h3>
+                        <p class="text-sm text-slate-400 mb-6">Building governance frameworks for GPT-4 and open-source models in regulated Indian environments.</p>
+                        <div class="flex items-center text-emerald-400 font-semibold text-sm">
+                            Read Full Analysis
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="#" class="inline-flex items-center text-emerald-400 font-bold hover:text-emerald-300 transition group" aria-label="View all insights">
+                        View All Insights & Case Studies
+                        <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 px-6" aria-label="Contact us">
+            <div class="max-w-4xl mx-auto glass p-8 md:p-12 rounded-3xl border-emerald-500/20 shadow-2xl relative overflow-hidden">
+                <!-- Background pattern -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-emerald-500/5 rounded-full -translate-y-32 translate-x-32"></div>
+                <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/5 rounded-full translate-y-48 -translate-x-48"></div>
+                
+                <div class="relative z-10">
+                    <div class="text-center mb-10">
+                        <h2 class="text-4xl font-extrabold mb-4">Start Your <span class="text-emerald-500">Unicorn Audit</span></h2>
+                        <p class="text-slate-300 mb-6 text-lg max-w-2xl mx-auto">Connect with us for a direct 15-minute executive tech assessment. No pitch — just actionable strategy.</p>
+                        
+                        <div class="flex flex-wrap justify-center gap-4 mb-8">
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-check-circle text-emerald-500 mr-2"></i>
+                                <span class="text-slate-400">Free 30-minute consultation</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-check-circle text-emerald-500 mr-2"></i>
+                                <span class="text-slate-400">No obligation</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-check-circle text-emerald-500 mr-2"></i>
+                                <span class="text-slate-400">Confidential assessment</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form action="https://formsubmit.co/contact@securegensystems.com" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-2xl mx-auto">
+                        <input type="hidden" name="_subject" value="New Lead: Unicorn Audit Request - SecureGen Systems">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_autoresponse" value="Thank you for your interest in SecureGen Systems. We'll contact you within 24 hours to schedule your executive review.">
+                        <input type="hidden" name="_cc" value="ceo@securegensystems.com">
+                        
+                        <div class="md:col-span-2">
+                            <label for="service" class="block text-sm font-medium text-slate-400 mb-2">Primary Interest *</label>
+                            <select id="service" name="service" required class="w-full bg-slate-900/50 border border-slate-700 p-4 rounded-xl focus:outline-none focus:border-emerald-500 text-white appearance-none">
+                                <option value="" disabled selected>Select your primary challenge</option>
+                                <option value="fractional-cto">Fractional CTO Leadership</option>
+                                <option value="finops-audit">Cloud Cost Optimization (FinOps)</option>
+                                <option value="security">Security & Compliance (CISO)</option>
+                                <option value="ai-governance">AI/LLMOps & Governance</option>
+                                <option value="infrastructure">Infrastructure Scaling</option>
+                                <option value="other">Other Executive Advisory</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-slate-400 mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="John Sharma" required class="w-full bg-slate-900/50 border border-slate-700 p-4 rounded-xl focus:outline-none focus:border-emerald-500 text-white" aria-required="true">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-400 mb-2">Work Email *</label>
+                            <input type="email" id="email" name="email" placeholder="john@company.com" required class="w-full bg-slate-900/50 border border-slate-700 p-4 rounded-xl focus:outline-none focus:border-emerald-500 text-white" aria-required="true">
+                        </div>
+                        
+                        <div class="md:col-span-2">
+                            <label for="company" class="block text-sm font-medium text-slate-400 mb-2">Company Name *</label>
+                            <input type="text" id="company" name="company" placeholder="Your Company Pvt Ltd" required class="w-full bg-slate-900/50 border border-slate-700 p-4 rounded-xl focus:outline-none focus:border-emerald-500 text-white" aria-required="true">
+                        </div>
+                        
+                        <div class="md:col-span-2">
+                            <label for="message" class="block text-sm font-medium text-slate-400 mb-2">Current Challenge (Optional)</label>
+                            <textarea id="message" name="message" placeholder="Briefly describe your current technology or scaling challenge..." rows="4" class="w-full bg-slate-900/50 border border-slate-700 p-4 rounded-xl focus:outline-none focus:border-emerald-500 text-white resize-none"></textarea>
+                        </div>
+                        
+                        <div class="md:col-span-2">
+                            <div class="flex items-center mb-4">
+                                <input type="checkbox" id="newsletter" name="newsletter" class="w-4 h-4 bg-slate-900 border-slate-700 rounded focus:ring-emerald-500" checked>
+                                <label for="newsletter" class="ml-2 text-sm text-slate-400">Subscribe to monthly executive insights (No spam, unsubscribe anytime)</label>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white py-5 rounded-xl font-bold text-xl transition-all shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 transform hover:scale-[1.02] active:scale-[0.98]">
+                                <i class="fas fa-rocket mr-2"></i> Analyze My Infrastructure
+                            </button>
+                            
+                            <p class="text-slate-500 text-xs mt-4 text-center">
+                                <i class="fas fa-lock mr-1"></i> Your information is secure and confidential. We respond within 24 hours.
+                            </p>
+                        </div>
+                    </form>
+                    
+                    <!-- Alternative Contact Methods -->
+                    <div class="mt-12 pt-8 border-t border-slate-800 text-center">
+                        <p class="text-slate-400 mb-4">Prefer a direct conversation?</p>
+                        <div class="flex flex-col sm:flex-row justify-center gap-4">
+                            <a href="https://wa.me/917666733111?text=Hi%20SecureGen%20Team,%20I'd%20like%20to%20discuss%20a%20FinOps%20audit" target="_blank" class="inline-flex items-center justify-center bg-green-600 hover:bg-green-500 text-white py-3 px-6 rounded-xl font-semibold transition" aria-label="Contact us on WhatsApp">
+                                <i class="fab fa-whatsapp mr-2 text-lg"></i> WhatsApp: +91 76667 33111
+                            </a>
+                            <a href="mailto:contact@securegensystems.com" class="inline-flex items-center justify-center bg-slate-800 hover:bg-slate-700 text-white py-3 px-6 rounded-xl font-semibold transition border border-slate-700" aria-label="Email us">
+                                <i class="fas fa-envelope mr-2"></i> contact@securegensystems.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-16 px-6 bg-slate-900 border-t border-white/5" aria-label="Site footer">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <img src="./Securden1.jpg" alt="SecureGen Systems Logo" class="h-12 w-auto mr-4" loading="lazy">
+                        <div class="text-2xl font-black tracking-tighter">
+                            <span class="text-white">SecureGen</span>
+                            <span class="text-emerald-500">Systems</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6 max-w-md">
+                        Fractional CTO & CISO services delivering battle-tested Zero Trust, Cloud FinOps, and AI Governance frameworks for India's fastest-growing companies.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/company/securegen-systems" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 hover:bg-emerald-600 flex items-center justify-center transition" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/securegensystems" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 hover:bg-emerald-600 flex items-center justify-center transition" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://github.com/securegen" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 hover:bg-emerald-600 flex items-center justify-center transition" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-bold mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="text-slate-400 hover:text-emerald-400 transition text-sm">Fractional CTO</a></li>
+                        <li><a href="#services" class="text-slate-400 hover:text-emerald-400 transition text-sm">FinOps Audit</a></li>
+                        <li><a href="#services" class="text-slate-400 hover:text-emerald-400 transition text-sm">CISO-as-a-Service</a></li>
+                        <li><a href="#services" class="text-slate-400 hover:text-emerald-400 transition text-sm">AI Governance</a></li>
+                        <li><a href="#contact" class="text-slate-400 hover:text-emerald-400 transition text-sm">Free Executive Review</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-white font-bold mb-6">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-emerald-500 mt-1 mr-3 text-sm"></i>
+                            <span class="text-slate-400 text-sm">Mumbai, Maharashtra<br>India 400001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-emerald-500 mr-3 text-sm"></i>
+                            <a href="tel:+917666733111" class="text-slate-400 hover:text-emerald-400 transition text-sm">+91 76667 33111</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-emerald-500 mr-3 text-sm"></i>
+                            <a href="mailto:contact@securegensystems.com" class="text-slate-400 hover:text-emerald-400 transition text-sm">contact@securegensystems.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="pt-8 border-t border-white/5">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-slate-500 text-sm mb-4 md:mb-0">© 2025 SecureGen Systems Pvt Ltd. All rights reserved.</p>
+                    <div class="flex space-x-6 text-sm">
+                        <a href="/privacy" class="text-slate-500 hover:text-emerald-400 transition">Privacy Policy</a>
+                        <a href="/terms" class="text-slate-500 hover:text-emerald-400 transition">Terms of Service</a>
+                        <a href="/cookies" class="text-slate-500 hover:text-emerald-400 transition">Cookie Policy</a>
+                    </div>
+                </div>
+                <p class="text-slate-600 text-xs mt-4 text-center md:text-left">Built with ❤️ in India for the world's fastest-growing companies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Chatbot + WhatsApp -->
+    <div class="fixed bottom-6 right-6 z-[100] flex flex-col items-end gap-4" aria-label="Floating action buttons">
+        <div id="chatbot-window" class="w-80 glass rounded-2xl overflow-hidden shadow-2xl border-emerald-500/20" role="dialog" aria-label="Chat assistant" aria-hidden="true">
+            <div class="bg-gradient-to-r from-emerald-600 to-emerald-500 p-4 font-bold flex justify-between items-center text-sm text-white">
+                <span><i class="fas fa-robot mr-2"></i> SecureGen Assistant</span>
+                <button onclick="toggleChat()" class="text-white hover:text-gray-200 focus:outline-none" aria-label="Close chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="p-6 bg-slate-900/90 text-sm text-slate-300">
+                <p class="mb-6">Hello! How can we accelerate your scale today?</p>
+                <div class="space-y-3">
+                    <a href="https://wa.me/917666733111?text=I%20want%20a%20free%20cloud%20FinOps%20audit" target="_blank" class="block bg-white/5 hover:bg-emerald-600/30 p-3 rounded-lg text-left transition flex items-center">
+                        <i class="fas fa-chart-line text-emerald-500 mr-3"></i>
+                        <span>Free Cloud Cost Audit</span>
+                    </a>
+                    <a href="https://wa.me/917666733111?text=Interested%20in%20Zero%20Trust%20assessment" target="_blank" class="block bg-white/5 hover:bg-emerald-600/30 p-3 rounded-lg text-left transition flex items-center">
+                        <i class="fas fa-shield-alt text-emerald-500 mr-3"></i>
+                        <span>Zero Trust Assessment</span>
+                    </a>
+                    <a href="#contact" class="block bg-emerald-600 hover:bg-emerald-500 p-3 rounded-lg text-center font-bold transition" onclick="toggleChat()">
+                        Book Executive Call
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <button onclick="toggleChat()" class="w-14 h-14 bg-gradient-to-br from-emerald-600 to-emerald-500 rounded-full shadow-2xl flex items-center justify-center text-white text-2xl hover:scale-110 transition focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-slate-900" aria-label="Open chat assistant">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+        
+        <a href="https://wa.me/917666733111?text=Hi%20SecureGen%20Team,%20I%20saw%20your%20website%20and%20would%20like%20to%20connect" target="_blank" class="w-14 h-14 bg-gradient-to-br from-green-600 to-green-500 rounded-full shadow-2xl flex items-center justify-center text-white text-2xl hover:scale-110 transition focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-slate-900" aria-label="Contact us on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-24 right-6 w-12 h-12 bg-slate-800 hover:bg-slate-700 rounded-full shadow-lg flex items-center justify-center text-white opacity-0 pointer-events-none transition-all duration-300 z-40 focus:outline-none focus:ring-2 focus:ring-emerald-500" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const hamburger = menuBtn.querySelector('.hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('hidden');
+            menuBtn.setAttribute('aria-expanded', !isExpanded);
+        });
+        
+        // Close menu when link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.add('hidden');
+                menuBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 80) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+            
+            // Back to top button
+            const backToTop = document.getElementById('back-to-top');
+            if (window.scrollY > 300) {
+                backToTop.classList.remove('opacity-0', 'pointer-events-none');
+                backToTop.classList.add('opacity-100', 'pointer-events-auto');
+            } else {
+                backToTop.classList.remove('opacity-100', 'pointer-events-auto');
+                backToTop.classList.add('opacity-0', 'pointer-events-none');
+            }
+        });
+        
+        // Back to top functionality
+        document.getElementById('back-to-top').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Chat toggle
+        function toggleChat() {
+            const chatbot = document.getElementById('chatbot-window');
+            const isActive = chatbot.classList.contains('active');
+            
+            chatbot.classList.toggle('active');
+            chatbot.setAttribute('aria-hidden', isActive);
+        }
+        
+        // Form submission handling
+        document.querySelector('form')?.addEventListener('submit', function(e) {
+            // Add loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Processing...';
+            submitBtn.disabled = true;
+            
+            // Simulate API call
+            setTimeout(() => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                // In production, this would be handled by FormSubmit.co
+            }, 1500);
+        });
+        
+        // Animate elements on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-fade-in-up');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.style.opacity = "1";
+                    element.style.transform = "translateY(0)";
+                }
+            });
+        }
+        
+        // Set initial state for animation
+        document.querySelectorAll('.animate-fade-in-up').forEach(el => {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(30px)";
+            el.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+        });
+        
+        // Listen for scroll events
+        window.addEventListener('scroll', animateOnScroll);
+        // Initial check
+        animateOnScroll();
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                
+                if (href === '#') return;
+                
+                e.preventDefault();
+                const target = document.querySelector(href);
+                
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Initialize animations
+        window.addEventListener('load', () => {
+            animateOnScroll();
+            
+            // Add loaded class for any CSS transitions
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>
